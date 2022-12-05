@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   
-  <link rel="stylesheet" href="files/mobiscroll/mobiscroll.javascript.min.css">
+  <!-- <link rel="stylesheet" href="files/mobiscroll/mobiscroll.javascript.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css">
   <link rel="stylesheet" href="files/slick/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Travel Agency</title>
@@ -55,14 +57,16 @@
 		</div>
 		<div class="form-date">
 			<div class="form-date__to">	
-			<label for="form-date__to">Leave </label>
-			<img src="images/airplane_right.png" alt="airplane_img">
-			<input id="demo-flight-booking-outbound" placeholder="Please select...">
+				<label for="form-date__to">Leave </label>
+				<img src="images/airplane_right.png" alt="airplane_img">
+				<!-- <input id="demo-flight-booking-outbound" type="date" value="2022-07-22" placeholder="Please select..." /> -->
+				<input type="text" placeholder="Please select..." name="daterange" class="form-control date-picker" id="date-picker">
 			</div>
 			<img src="images/planner.png" alt="planner_img">
 			<div class="form-date__from">
 				<label for="form-date__from">Return <img src="images/airplane_left.png" alt="airplane_img"></label>
-				<input id="demo-flight-booking-return" placeholder="Please select...">
+				<!-- <input id="demo-flight-booking-return" type="date"  value="2022-07-22" placeholder="Please select..." /> -->
+				<input type="text" placeholder="Please select..." name="daterange" class="form-control date-picker-2" id="date date-picker-2">
 			</div>
 		</div>
 	<button id="searchBtn"><img src="images/seach.png" alt="seach_img"></button>
@@ -249,7 +253,10 @@
 </footer>
     <!-- </div> -->
     <script src="files/jquery/JQuery.js"></script>
-<script src="files/mobiscroll/mobiscroll.javascript.min.js"></script>
+<!-- <script src="files/mobiscroll/mobiscroll.javascript.min.js"></script> -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 <script src="files/mixitup/mixitup.min.js"></script>
 <script src="files/slick/slick.min.js"></script>
 <script src="js/app.min.js"></script>
